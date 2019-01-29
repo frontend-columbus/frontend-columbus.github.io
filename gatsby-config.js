@@ -13,10 +13,13 @@ module.exports = {
       options: {
         alias: {
           "@components": path.resolve(__dirname, 'src/components'),
-          "@config": path.resolve(__dirname, 'src/config.js')
+          "@config": path.resolve(__dirname, 'src/config.js'),
+          "@images": path.resolve(__dirname, 'src/images'),
         },
         extensions: [
           "js",
+          "png",
+          "svg",
         ],
       }
     },
@@ -39,7 +42,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.svg`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
